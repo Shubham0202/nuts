@@ -5,7 +5,7 @@ function [sortedNuts, sortedBolts] = matchNutsBolts(nuts, bolts)
         return;
     end
 
-    pivotNut = nuts(1); // Choose the first nut as the pivot
+    pivotNut = nuts(1); 
     [lessBolts, equalBolt, greaterBolts] = partitionBolts(bolts, pivotNut);
     [lessNuts, equalNut, greaterNuts] = partitionNuts(nuts, equalBolt);
 
